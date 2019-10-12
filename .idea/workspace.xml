@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="jquery">
-      <change beforePath="$PROJECT_DIR$/res/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/styles.css" afterDir="false" />
-    </list>
+    <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +67,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570867666962</updated>
       <workItem from="1570867668056" duration="5424000" />
-      <workItem from="1570900386532" duration="258000" />
+      <workItem from="1570900386532" duration="649000" />
     </task>
     <task id="LOCAL-00001" summary="constructors">
       <created>1570869034704</created>
@@ -106,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570871064637</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Renamed Style.cc to styles.css because in css linking styles.css was used">
+      <created>1570900807004</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1570900807004</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +134,7 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="constructors" />
     <MESSAGE value="jquery" />
-    <option name="LAST_COMMIT_MESSAGE" value="jquery" />
+    <MESSAGE value="Renamed Style.cc to styles.css because in css linking styles.css was used" />
+    <option name="LAST_COMMIT_MESSAGE" value="Renamed Style.cc to styles.css because in css linking styles.css was used" />
   </component>
 </project>
