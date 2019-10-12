@@ -2,9 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/js/Course.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/Course.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/js/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/User.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,8 +53,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1570867666962</updated>
-      <workItem from="1570867668056" duration="1176000" />
+      <workItem from="1570867668056" duration="2026000" />
     </task>
+    <task id="LOCAL-00001" summary="constructors">
+      <created>1570869034704</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570869034704</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -73,5 +78,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="constructors" />
+    <option name="LAST_COMMIT_MESSAGE" value="constructors" />
   </component>
 </project>
