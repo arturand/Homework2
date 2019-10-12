@@ -2,86 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" href="res/images/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="res/css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="res/css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
     <title>My Dashboard</title>
 </head>
-
-<style>
-    * {
-        font-family: 'Nunito', sans-serif;
-    }
-</style>
-
 <body>
-<header>
-    <nav style="border: 3px solid black;color: #F0E8E8;"><strong>Welcome to your dashboard!</strong></nav>
-</header>
+<main>
+    <header>
+        <strong>Welcome to your dashboard!</strong>
+    </header>
+    <section id="container">
+        <section id="main">
+            <div class="content">
+                <div id="profile-container" class="tab active">
+                    <div id="profile">
+                        <div class="avatar">
+                            <img src="res/images/me.png" id="picture" alt="My picture">
+                        </div>
+                        <div class="info">
+                            <ul>
+                                <li id="name">John Doe</li>
+                                <li id="birthdate">11/10/1990</li>
+                                <li id="faculty">Software Engineering</li>
+                            </ul>
+                        </div>
+                        <div id="gpa">
+                            <strong>2.75</strong>
+                        </div>
+                        <div class="clear-fix"></div>
+                    </div>
+                </div>
+                <div id="courses-container" class="tab">
+                    <h1 class="title">Courses</h1>
+                    <table id="courses">
+                        <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Course Title</th>
+                            <th>Semester</th>
+                            <th>Grade</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Agile software development</td>
+                            <td>1</td>
+                            <td>82</td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>System modeling</td>
+                            <td>1</td>
+                            <td>85</td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>Object-oriented programming</td>
+                            <td>2</td>
+                            <td>99</td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>Estonian language Level A2</td>
+                            <td>2</td>
+                            <td>65</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <br>
+                    <br>
+                    <div>
+                        <button id="add-course-button" class="blue-button">+</button>
+                        <span id="add-course">
+                            <input class="input" type="text" placeholder="Course title" id="title">
+                            <input class="input" type="number" min="1" max="8" placeholder="Semester" id="semester">
+                            <input class="input" type="number" min="0" max="100" placeholder="Grade" id="grade">
+                            <button class="green-button" id="save-course">Save</button>
+                            <button class="grey-button" id="cancel-course">Cancel</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <button id="profile-button" class="pill active">Profile</button>
+                <button id="courses-button" class="pill">Courses</button>
+            </div>
+        </section>
+    </section>
+    <footer>
+        <ul class="links">
+            <li>
+                <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+            </li>
+            <li>
+                <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+            </li>
+        </ul>
+    </footer>
+</main>
 
-<section>
-    <div>
-        <img src="res/images/me.png" alt="My picture" title="Not really my picture" id="pilt">
-    </div>
-    <div>
-        <ol>
-            <li>John Doe</li>
-            <li>27/06/1993</li>
-            <li>Software Engineering</li>
-        </ol>
-    </div>
-    <div>
-        <strong>2.65</strong>
-    </div>
-</section>
-
-<section>
-    <h1>
-        <span>Courses</span>
-    </h1>
-    <table class="rida">
-        <tr>
-            <th>#</th>
-            <th>Course Title</th>
-            <th>Semester</th>
-            <th>Grade</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td><a href="https://courses.cs.ut.ee/2019/asd/fall" target="_blank">Agile software development</a></td>
-            <td>1</td>
-            <td>82</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td><a href="https://courses.cs.ut.ee/2019/SM/fall" target="_blank">Systems Modelling</a></td>
-            <td>1</td>
-            <td>85</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td><a href="https://courses.cs.ut.ee/2019/oop/spring" target="_blank">Object-oriented programming</a></td>
-            <td>2</td>
-            <td>99</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td><a href="" target="_blank">Estonian language Level A2</a></td>
-            <td>2</td>
-            <td>65</td>
-        </tr>
-    </table>
-</section>
-
-<footer>
-    <ul>
-        <li>
-            <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
-        </li>
-        <li>
-            <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
-        </li>
-    </ul>
-</footer>
 </body>
 </html>
