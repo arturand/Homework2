@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="jquery">
-      <change afterPath="$PROJECT_DIR$/constructors.patch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/images/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/images/me.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/js/script.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/res/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/Style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/css/Style.css" beforeDir="false" afterPath="$PROJECT_DIR$/res/css/styles.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +69,7 @@
       <option name="presentableId" value="Default" />
       <updated>1570867666962</updated>
       <workItem from="1570867668056" duration="5424000" />
+      <workItem from="1570900386532" duration="258000" />
     </task>
     <task id="LOCAL-00001" summary="constructors">
       <created>1570869034704</created>
@@ -122,7 +117,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
