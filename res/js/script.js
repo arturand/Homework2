@@ -1,16 +1,17 @@
 $(function () {
-    var user = new User(
+    let user = new User(
         "Siim",
         "Anderson",
         "12.04.1997",
         "Computer Science",
         5.0);
 
-    var users;
+    let users;
     users = new User("Siim", "Anderson", "12.04.1997", "Computer Science", 5.0);
 
-    var course = new Course();
-    var courses;
+    let course = new Course();
+    let courses;
+    
     courses = [
         new Course("Operation systems", 1, 4.0),
         new Course("Software Engineering", 1, 3.0),
@@ -78,7 +79,12 @@ $(function () {
             $('#add-course').toggle()
         });
         $('#save-course').click(function(){
+            
             tableUpdate();
+            $('#add-course').hide();
+        });
+        $("#cancel-course").click(function(){
+            formClear();
             $('#add-course').hide();
         });
     }
@@ -96,20 +102,18 @@ $(function () {
             "</tr>"
         );
     };
-    function addCourse(){
-        
-    }
     
     function tableUpdate(){
         if ($("#title").val() != null &&
             $("#title").val() != '') {
-        addToTable();
-        formClear();
-        $("#productname").focus();
+            addToTable();
+            formClear();
     }};
     function formClear() {
         $("#title").val("");
         $("#semester").val("");
         $("#grade").val("");
       };
+
+    
 });
