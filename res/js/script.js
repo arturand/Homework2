@@ -1,15 +1,8 @@
 $(function () {
-    let user = new User(
-        "Siim",
-        "Anderson",
-        "12.04.1997",
-        "Computer Science",
-        5.0);
 
     let users;
     users = new User("Siim", "Anderson", "12.04.1997", "Computer Science", 5.0);
 
-    let course = new Course();
     let courses;
     
     courses = [
@@ -19,15 +12,34 @@ $(function () {
         new Course("Introduction to Data Science", 1, 3.0)
     ];
 
-    init();
+    let user = new User(
+        "Siim",
+        "Anderson",
+        "12.04.1997",
+        "Computer Science",
+        0
+    );
 
+    init();
+    function calculateGPA(){
+        let gpa = 0;
+        for (let i = 0; i < courses.length ; i++) {
+            gpa += courses[i].grade;
+        }
+        gpa = gpa/courses.length;
+
+        return (gpa * 100) / 100;
+    }
     //Initialization function
     function init() {
 
         $("#profile #name").text(user.firstname + " " + user.lastname);
         $("#profile #birthdate").text(user.birthdate);
         $("#profile #faculty").text(user.faculty);
-        $("#profile #gpa").html("<strong>" + user.gpa + "</strong>");
+        $("#profile #gpa").text(calculateGPA()).wrapInner("<strong/>");
+        $("#courses").empty();
+
+
 
         //Loop through array of courses
         for (let i = 0; i < courses.length; i++) {
@@ -49,7 +61,7 @@ $(function () {
             tr.append(td4);
 
             //Append tr tag to tbody element inside and element with courses-container
-            $('#courses-container tbody').append(tr)
+            $('#courses').append(tr)
         }
 
         //Profile button logic
@@ -79,7 +91,11 @@ $(function () {
             $('#add-course').toggle()
         });
         $('#save-course').click(function(){
-            
+            courses.push(new Course($("#title").val(),$("#semester").val(),$("#grade").val()));
+            $("#td2").val("");
+            $("#td3").val("");
+            $("#td4").val("");
+            init();
             tableUpdate();
             $('#add-course').hide();
         });
@@ -109,11 +125,16 @@ $(function () {
             addToTable();
             formClear();
     }};
+    function updateGPA(){
+        return calculateGPA()
+    }
     function formClear() {
         $("#title").val("");
         $("#semester").val("");
         $("#grade").val("");
       };
+
+
 
     
 });
