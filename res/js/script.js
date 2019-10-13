@@ -26,7 +26,29 @@ $(function () {
         $("#profile #name").text(user.firstname + " " + user.lastname);
         $("#profile #birthdate").text(user.birthdate);
         $("#profile #faculty").text(user.faculty);
-        $("#profile #gpa").text(user.gpa);
+        $("#profile #gpa").html("<strong>" + user.gpa + "</strong>");
 
+        //Loop through array of courses
+        for (let i = 0; i < courses.length; i++) {
+            //Create empty tr item tag
+            let tr = $("<tr></tr>");
+            //Create td tag with number
+            let td1 = $('<td></td>').text(i+1);
+            //Create td tag with course name
+            let td2 = $('<td></td>').text(courses[i].title);
+            //Create td tag with semester
+            let td3 = $('<td></td>').text(courses[i].semester);
+            //Create td tag with grade
+            let td4 = $('<td></td>').text(courses[i].grade);
+
+            //Add all td tags to tr
+            tr.append(td1);
+            tr.append(td2);
+            tr.append(td3);
+            tr.append(td4);
+
+            //Append tr tag to tbody element inside and element with courses-container
+            $('#courses-container tbody').append(tr)
+        }
     }
 });
