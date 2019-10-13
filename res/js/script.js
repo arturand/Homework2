@@ -6,10 +6,10 @@ $(function () {
     let courses;
     
     courses = [
-        new Course("Operation systems", 1, 4.0),
-        new Course("Software Engineering", 1, 3.0),
-        new Course("Algorithms and Data Structures", 1, 5.0),
-        new Course("Introduction to Data Science", 1, 3.0)
+        new Course("Operation systems", 1, 98),
+        new Course("Software Engineering", 1, 55),
+        new Course("Algorithms and Data Structures", 1, 68),
+        new Course("Introduction to Data Science", 1, 76)
     ];
 
     let user = new User(
@@ -24,7 +24,7 @@ $(function () {
     function calculateGPA(){
         let gpa = 0;
         for (let i = 0; i < courses.length ; i++) {
-            gpa += courses[i].grade;
+            gpa += GradePoints(courses[i].grade);
         }
         gpa = gpa/courses.length;
 
@@ -96,7 +96,7 @@ $(function () {
             $("#td3").val("");
             $("#td4").val("");
             init();
-            $("add-course").toggleClassh("hidden")
+            $("add-course").toggleClass("hidden")
             $('#add-course').hide();
         });
         $("#cancel-course").click(function(){
@@ -138,3 +138,22 @@ $(function () {
 
     
 });
+
+function GradePoints(grade) {
+    if (grade >= 90) {
+        return 4;
+    } else if (grade >= 80) {
+        return 3;
+    } else if (grade >= 70) {
+        return 2;
+    } else if (grade >= 60) {
+        return 1;
+    } else if (grade >= 50) {
+        return 0.5;
+    } else {
+        return 0;
+    };
+
+
+
+}
