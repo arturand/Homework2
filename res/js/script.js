@@ -37,7 +37,7 @@ $(function () {
         $("#profile #birthdate").text(user.birthdate);
         $("#profile #faculty").text(user.faculty);
         $("#profile #gpa").text(calculateGPA()).wrapInner("<strong/>");
-        $("#courses").empty(); //
+        $("#courses").empty();
 
 
 
@@ -96,7 +96,7 @@ $(function () {
             $("#td3").val("");
             $("#td4").val("");
             init();
-            tableUpdate();
+            $("add-course").toggleClassh("hidden")
             $('#add-course').hide();
         });
         $("#cancel-course").click(function(){
