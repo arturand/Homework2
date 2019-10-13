@@ -33,7 +33,7 @@ $(function () {
             //Create empty tr item tag
             let tr = $("<tr></tr>");
             //Create td tag with number
-            let td1 = $('<td></td>').text(i+1);
+            let td1 = $('<td></td>').text(i + 1);
             //Create td tag with course name
             let td2 = $('<td></td>').text(courses[i].title);
             //Create td tag with semester
@@ -51,20 +51,31 @@ $(function () {
             $('#courses-container tbody').append(tr)
         }
 
-        $("#profile-button").click(function(){
+        //Profile button logic
+        //When clicked removes pill and tab classes from #profile-button and adds pill active and tab active classes
+        //And removes pill active and tab active classes from #courses-button and adds pill and tab classes
+        $("#profile-button").click(function () {
             $("#profile-button").removeClass("pill").addClass("pill active");
             $("#courses-button").removeClass("pill active").addClass("pill");
 
-            $("#profile-container").addClass("tab active");
+            $("#profile-container").removeClass("tab").addClass("tab active");
             $("#courses-container").removeClass("tab active").addClass("tab");
         });
 
-        $("#courses-button").click(function(){
+        //Courses button logic
+        //When clicked removes pill and tab class from #courses-button and adds pill active and tab active classes
+        //And removes pill active and tab active class from #profile-button and adds pill and tab classes
+        $("#courses-button").click(function () {
             $("#courses-button").removeClass("pill").addClass("pill active");
             $("#profile-button").removeClass("pill active").addClass("pill");
 
-            $("#courses-container").addClass("tab active");
+            $("#courses-container").removeClass("tab").addClass("tab active");
             $("#profile-container").removeClass("tab active").addClass("tab");
+        });
+
+        //Toggles between dispaly: show and display: none, show/hide add course fields
+        $("#add-course-button").click(function () {
+            $('#add-course').toggle()
         });
     }
 });

@@ -89,7 +89,7 @@
       <workItem from="1570867668056" duration="5424000" />
       <workItem from="1570900386532" duration="3999000" />
       <workItem from="1570963592271" duration="5935000" />
-      <workItem from="1570970177105" duration="7496000" />
+      <workItem from="1570970177105" duration="8740000" />
     </task>
     <task id="LOCAL-00001" summary="constructors">
       <created>1570869034704</created>
@@ -154,7 +154,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570974746310</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Made &quot;Profile &quot; and &quot;Courses&quot; buttons clickable so that they show/hide corresponding containers">
+      <created>1570977802695</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1570977802695</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,6 +187,7 @@
     <MESSAGE value="Renamed Style.cc to styles.css because in css linking styles.css was used" />
     <MESSAGE value="Added basic init for user information" />
     <MESSAGE value="Added basic init for courses information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic init for courses information" />
+    <MESSAGE value="Made &quot;Profile &quot; and &quot;Courses&quot; buttons clickable so that they show/hide corresponding containers" />
+    <option name="LAST_COMMIT_MESSAGE" value="Made &quot;Profile &quot; and &quot;Courses&quot; buttons clickable so that they show/hide corresponding containers" />
   </component>
 </project>
