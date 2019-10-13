@@ -37,7 +37,7 @@ $(function () {
         $("#profile #birthdate").text(user.birthdate);
         $("#profile #faculty").text(user.faculty);
         $("#profile #gpa").text(calculateGPA()).wrapInner("<strong/>");
-        $("#courses").empty();
+        $("#courses").empty(); //
 
 
 
