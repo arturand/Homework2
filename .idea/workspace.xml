@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="Added basic init for user information">
+    <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/script.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,6 +26,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="cc1808e9-1a1a-48ee-b69a-f60b9cfd6a09" />
   </component>
   <component name="ProjectId" id="1S5yHwyy2WytIk6sfIAqfMjGHnc" />
   <component name="ProjectLevelVcsManager">
@@ -87,7 +89,7 @@
       <workItem from="1570867668056" duration="5424000" />
       <workItem from="1570900386532" duration="3999000" />
       <workItem from="1570963592271" duration="5935000" />
-      <workItem from="1570970177105" duration="4505000" />
+      <workItem from="1570970177105" duration="7496000" />
     </task>
     <task id="LOCAL-00001" summary="constructors">
       <created>1570869034704</created>
@@ -145,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570971879350</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Added basic init for courses information">
+      <created>1570974746310</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1570974746310</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +179,7 @@
     <MESSAGE value="jquery" />
     <MESSAGE value="Renamed Style.cc to styles.css because in css linking styles.css was used" />
     <MESSAGE value="Added basic init for user information" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added basic init for user information" />
+    <MESSAGE value="Added basic init for courses information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic init for courses information" />
   </component>
 </project>

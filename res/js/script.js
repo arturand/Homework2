@@ -50,5 +50,21 @@ $(function () {
             //Append tr tag to tbody element inside and element with courses-container
             $('#courses-container tbody').append(tr)
         }
+
+        $("#profile-button").click(function(){
+            $("#profile-button").removeClass("pill").addClass("pill active");
+            $("#courses-button").removeClass("pill active").addClass("pill");
+
+            $("#profile-container").addClass("tab active");
+            $("#courses-container").removeClass("tab active").addClass("tab");
+        });
+
+        $("#courses-button").click(function(){
+            $("#courses-button").removeClass("pill").addClass("pill active");
+            $("#profile-button").removeClass("pill active").addClass("pill");
+
+            $("#courses-container").addClass("tab active");
+            $("#profile-container").removeClass("tab active").addClass("tab");
+        });
     }
 });
