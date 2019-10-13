@@ -1,7 +1,7 @@
 class Course {
-    constructor(){
-        this.title = title
-        this.semester = semester
-        this.grade = 0.0
+    constructor(title, semester, grade){
+        this.title = title;
+        this.semester = semester;
+        this.grade = grade;
     }
 }

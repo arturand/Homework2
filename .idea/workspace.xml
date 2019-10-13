@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="" />
+    <list default="true" id="295a405e-17e1-4c6a-8216-aa9ec90b059c" name="Default Changelist" comment="Added basic init for user information">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/constructors.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/js/Course.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/Course.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/js/User.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/User.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/js/jquery-3.4.1.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/res/js/script.js" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +30,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="ProjectId" id="1S5yHwyy2WytIk6sfIAqfMjGHnc" />
   <component name="ProjectLevelVcsManager">
@@ -31,6 +40,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="copyright" />
   </component>
@@ -46,13 +56,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JavaScript Debug.index.html (1)">
+    <configuration name="index.html (1)" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/Homework2/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
     <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/kodutöö2/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="Course.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/res/js/Course.js" working-dir="$PROJECT_DIR$/res/js">
+      <method v="2" />
+    </configuration>
+    <configuration name="script.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/res/js/script.js" working-dir="$PROJECT_DIR$/res/js">
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JavaScript Debug.index.html (1)" />
         <item itemvalue="JavaScript Debug.index.html" />
+        <item itemvalue="Node.js.Course.js" />
+        <item itemvalue="Node.js.script.js" />
       </list>
     </recent_temporary>
   </component>
@@ -67,7 +89,9 @@
       <option name="presentableId" value="Default" />
       <updated>1570867666962</updated>
       <workItem from="1570867668056" duration="5424000" />
-      <workItem from="1570900386532" duration="649000" />
+      <workItem from="1570900386532" duration="3999000" />
+      <workItem from="1570963592271" duration="5935000" />
+      <workItem from="1570970177105" duration="1687000" />
     </task>
     <task id="LOCAL-00001" summary="constructors">
       <created>1570869034704</created>
@@ -111,7 +135,14 @@
       <option name="project" value="LOCAL" />
       <updated>1570900807004</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Renamed Style.cc to styles.css because in css linking styles.css was used">
+      <created>1570901205946</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1570901205946</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +166,7 @@
     <MESSAGE value="constructors" />
     <MESSAGE value="jquery" />
     <MESSAGE value="Renamed Style.cc to styles.css because in css linking styles.css was used" />
-    <option name="LAST_COMMIT_MESSAGE" value="Renamed Style.cc to styles.css because in css linking styles.css was used" />
+    <MESSAGE value="Added basic init for user information" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added basic init for user information" />
   </component>
 </project>

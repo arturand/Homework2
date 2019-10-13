@@ -1,9 +1,9 @@
 class User {
-    constructor(){
-        this.firstname = firstname
-        this.lastname = lastname
-        this.birthdate = new Date(value)
-        this.faculty = faculty
-        this.gpa = 0.0
+    constructor(firstname, lastname, birthdate, faculty, gpa){
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.birthdate = birthdate;
+        this.faculty = faculty;
+        this.gpa = gpa;
     }
 }
