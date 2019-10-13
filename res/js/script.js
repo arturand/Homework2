@@ -12,10 +12,10 @@ $(function () {
     var course = new Course();
     var courses;
     courses = [
-        new Course("Operation systems", "First Semester", 4.0),
-        new Course("Software Engineering", "First Semester", 3.0),
-        new Course("Algorithms and Data Structures", "First Semester", 5.0),
-        new Course("Introduction to Data Science", "First semester", 3.0)
+        new Course("Operation systems", 1, 4.0),
+        new Course("Software Engineering", 1, 3.0),
+        new Course("Algorithms and Data Structures", 1, 5.0),
+        new Course("Introduction to Data Science", 1, 3.0)
     ];
 
     init();
@@ -77,5 +77,39 @@ $(function () {
         $("#add-course-button").click(function () {
             $('#add-course').toggle()
         });
+        $('#save-course').click(function(){
+            tableUpdate();
+            $('#add-course').hide();
+        });
     }
+    function addToTable(){
+        const title = $('#title').val();
+        const semester = $("#semester").val();
+        const grade = $("#grade").val();
+        
+        $('#courses-container tbody').append(
+            "<tr>"+
+                "<td>" +courses.length+ "</td>"+
+                "<td>"+title+"</td>" + 
+                "<td>" + semester + "</td>" +
+                "<td>" + grade + "</td>" +
+            "</tr>"
+        );
+    };
+    function addCourse(){
+        
+    }
+    
+    function tableUpdate(){
+        if ($("#title").val() != null &&
+            $("#title").val() != '') {
+        addToTable();
+        formClear();
+        $("#productname").focus();
+    }};
+    function formClear() {
+        $("#title").val("");
+        $("#semester").val("");
+        $("#grade").val("");
+      };
 });
